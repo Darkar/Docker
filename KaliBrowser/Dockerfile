@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -y && \
 apt-get install -y \
 net-tools \
-openbox \
+xfce4 \
 git \
 x11vnc \
 xvfb \
