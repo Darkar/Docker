@@ -2,4 +2,4 @@
 
 docker rmi octoprint -f
 
-docker build . -t octoprint
+docker build . -t jmagnan/octoprint
