@@ -11,3 +11,11 @@ ArchLinux Custom :
 - BlackArch
 - Accès en console / SSH
 - Accès en web via VNC
+
+## OctoPrint
+
+Interface Web de gestion d'impression 3D
+
+```
+docker run -d -v octoprint_config:/home/octoprint/.octoprint --restart=always --name OctoPrint octoprint
+```

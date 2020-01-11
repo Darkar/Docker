@@ -18,7 +18,6 @@ fi
 if [ $LANG_FR == true ]; then
     echo -e "\n#Installation du Français" >> Dockerfile
     echo "RUN ln -s /usr/share/zoneinfo/Europe/Paris /etc/localtime" >> Dockerfile
-    echo "RUN sed -i 's/#fr_FR.UTF-8 UTF-8/fr_FR.UTF-8 UTF-8/g' /etc/locale.gen" >> Dockerfile
     echo "RUN echo 'KEYMAP=fr-pc' > /etc/vconsole.conf" >> Dockerfile
     echo "RUN echo 'LANG=fr_FR.UTF-8' > /etc/locale.conf" >> Dockerfile
     echo "RUN locale-gen" >> Dockerfile
@@ -26,7 +25,7 @@ fi
 
 echo -e "\n#Mise à jours et installation" >> Dockerfile
 echo "ADD files/mirrorlist /etc/pacman.d/mirrorlist" >> Dockerfile
-echo "RUN pacman -Syyu --noconfirm zsh openssh vim git" >> Dockerfile
+echo "RUN pacman -S --noconfirm zsh openssh vim git" >> Dockerfile
 
 echo -e "\n#Configuration générale" >> Dockerfile
 echo "RUN chsh --shell /bin/zsh" >> Dockerfile
