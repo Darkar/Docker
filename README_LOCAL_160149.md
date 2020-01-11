@@ -6,7 +6,7 @@ Permet d'utiliser KaliLinux en mode graphique dans le navigateur Web ([Source](h
 
 ## BlackBox
 
-- ArchLinux
+ArchLinux Custom :
 - Configuration des options de build
 - BlackArch
 - Accès en console / SSH
@@ -19,4 +19,3 @@ Interface Web de gestion d'impression 3D
 ```
 docker run -d -v octoprint_config:/home/octoprint/.octoprint --restart=always --name OctoPrint octoprint
 ```
-DockerHub: [jmagnan/blackbox](https://hub.docker.com/r/jmagnan/blackbox)
