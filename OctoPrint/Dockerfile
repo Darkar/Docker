@@ -15,5 +15,5 @@ RUN adduser octoprint -D
 
 # Démarrage d'octoprint
 USER octoprint
-ENTRYPOINT ["./run"] 
+ENTRYPOINT ["octoprint", "serve"] 
 
