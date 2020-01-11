@@ -57,7 +57,7 @@ fi
 
 echo -e '\nENTRYPOINT [ "/usr/bin/zsh" ]' >> Dockerfile
 
-docker build . -t $NAME_IMG
+docker build . -t jmagnan/$NAME_IMG
 
 
 
