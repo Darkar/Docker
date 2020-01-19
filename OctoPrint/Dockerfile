@@ -19,6 +19,7 @@ RUN pip install "https://github.com/malnvenshorn/OctoPrint-CostEstimation/archiv
 RUN pip install "https://github.com/kantlivelong/OctoPrint-GCodeSystemCommands/archive/master.zip"
 RUN pip install "https://github.com/MoonshineSG/OctoPrint-Filament/archive/master.zip"
 RUN pip install "https://github.com/OllisGit/OctoPrint-DisplayLayerProgress/releases/latest/download/master.zip"
+RUN pip install "https://github.com/ieatacid/OctoPrint-GcodeEditor/archive/master.zip"
 
 
 #Création de l'utilisateur
